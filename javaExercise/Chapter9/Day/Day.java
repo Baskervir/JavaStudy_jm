@@ -8,7 +8,7 @@ public class Day {
     public Day() {}
     public Day(int year) { this.year = year; }
     public Day(int year, int month) { this(year); this.month = month; }
-    public Day(int year, int month, int date) { this(year, month); this.date = date }
+    public Day(int year, int month, int date) { this(year, month); this.date = date; }
     public Day(Day d) { this(d.year, d.month, d.date); }
 
     public int getYear() { return year; }
