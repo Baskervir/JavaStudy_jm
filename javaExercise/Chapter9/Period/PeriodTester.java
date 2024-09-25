@@ -13,5 +13,5 @@ public class PeriodTester {
         System.out.println("정종 = " + jeongjong);
         System.out.println("태종 = " + taejong);
         System.out.println("세종 = " + sejong);
-    }   
+    }
 }
