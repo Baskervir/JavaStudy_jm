@@ -1,6 +1,6 @@
 package Chapter10.Human;
 
-public class Id {
+class Id {
     static int counter = 0;
     private int id;
 
@@ -26,5 +26,5 @@ public class Id {
  * 이를 통해 데이터의 유효성 검사 or 추가 로직 수행 가능
  * 3. 유지 보수
  * - 클래스 구현 변경 -> 외부 코드에 영향 X -> 내부 로직 수행 가능
- * 
+ *
  * **/
