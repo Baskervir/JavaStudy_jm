@@ -5,4 +5,8 @@ Package
 - 단일형 임포트 선언 : [import 완전 한정 명칭;]
 - 온 디맨드형 임포트 선언 : [import 패키지명.*;]
 - 정적 임포트 선언 : [import static 패키지명.형명.식별자명;], [import static 패키지명.형명.*;]
+- import static java.lang.System.out.println; //컴파일 오류 : println = [인스턴스 메서드]
+- [System] : java.lang 패키지에 속한 클래스
+- [System.out] : System 클래스의 클래스(정적) 변수 (형은 PrintStream 클래스형)
+- [System.out.println] : PrintStream 클래스의 인스턴스 메서드
 - 

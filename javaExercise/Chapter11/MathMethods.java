@@ -3,11 +3,11 @@ package Chapter11;
 import java.util.Scanner;
 
 import static java.lang.Math.*;
-import static java.lang.System.out;
+import static java.lang.System.*;
 
 class MathMethods {
     public static void main(String[] args) {
-        Scanner stdIn = new Scanner(System.in);
+        Scanner stdIn = new Scanner(in);
         out.print("실 수 : ");
         double x = stdIn.nextDouble();
 
