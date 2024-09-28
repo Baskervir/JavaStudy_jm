@@ -11,6 +11,10 @@ public class Account {
     private Day openDay;
     private int id;
 
+    /**
+     * 인스턴트 초기화 블록
+     * 인스턴트 생성 시 마다 블록 내부 수행문 수행된다
+     * **/
     {
         id = ++counter;
         System.out.println("은행 계좌를 개설해주셔서 감사합니다.");

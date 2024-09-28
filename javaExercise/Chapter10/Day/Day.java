@@ -1,8 +1,7 @@
 package Chapter10.Day;
 
 import java.util.GregorianCalendar;
-
-import static java.util.Calendar.*;
+import static java.util.GregorianCalendar.*;
 
 public class Day {
     private int year = 1;
@@ -34,9 +33,9 @@ public class Day {
 
     public Day() {
         GregorianCalendar today = new GregorianCalendar();
-        this.year = today.get(GregorianCalendar.YEAR);
-        this.month = today.get(GregorianCalendar.MONTH) + 1;
-        this.date = today.get(GregorianCalendar.DATE);
+        this.year = today.get(YEAR);
+        this.month = today.get(MONTH) + 1;
+        this.date = today.get(DATE);
     }
 
     public Day(int year) {
