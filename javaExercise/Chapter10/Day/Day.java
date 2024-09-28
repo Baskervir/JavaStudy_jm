@@ -19,7 +19,7 @@ public class Day {
     }
 
     private static int dayOfMonth(int y, int m) {
-        return mdays[isLeap(y) ? 1 + 0][m - 1];
+        return mdays[isLeap(y) ? 1 : 0][m - 1];
     }
 
     private static int adjustedMonth(int m) {
@@ -34,9 +34,9 @@ public class Day {
 
     public Day() {
         GregorianCalendar today = new GregorianCalendar();
-        this.year = today.get(YEAR);
-        this.month = today.get(MONTH) - 1;
-        this.date = today.get(DATE);
+        this.year = today.get(GregorianCalendar.YEAR);
+        this.month = today.get(GregorianCalendar.MONTH) + 1;
+        this.date = today.get(GregorianCalendar.DATE);
     }
 
     public Day(int year) {
@@ -100,15 +100,120 @@ public class Day {
             y--;
             m += 12;
         }
-        return (y + y / 4 - y / 100 + y / 400 + (13 * m + 8) / 5 + date) & 7;
+        return (y + y / 4 - y / 100 + y / 400 + (13 * m + 8) / 5 + date) % 7;
     }
 
     public boolean equalTo(Day d) {
-        return year == d.year && month = d.month && date == d.date;
+        return year == d.year && month == d.month && date == d.date;
     }
 
     public String toString() {
         String[] wd = {"일", "월", "화", "수", "목", "금", "토"};
         return String.format("%04d년%02d월%02d일(%s)", year, month, date, wd[dayOfWeek()]);
+    }
+
+    public int dayOfYear() {
+        int days = date;
+        for (int i = 1; i < month; i++)
+            days += dayOfMonth(year, i);
+        return days;
+    }
+
+    public int leftDayOfYear() {
+        return 365 + (isLeap(year) ? 1 : 0) - dayOfYear();
+    }
+
+    public int compareTo(Day d) {
+        return compare(this, d);
+    }
+
+    public static int compare(Day d1, Day d2) {
+        if (d1.year > d2.year) return 1;
+        if (d1.year < d2.year) return -1;
+
+        if (d1.month > d2.month) return 1;
+        if (d1.month < d2.month) return -1;
+
+        return d1.date > d2.date ? 1 : d1.date < d2.date ? -1 : 0;
+    }
+
+    public void succeed() {
+        if (date < dayOfMonth(year, month))
+            date++;
+        else {
+            if (++month > 12) {
+                year++;
+                month = 1;
+            }
+
+            date = 1;
+        }
+    }
+
+    public Day succeedingDay() {
+        Day temp = new Day(this);
+        temp.succeed();
+        return temp;
+    }
+
+    public void precede() {
+        if (date > 1)
+            date--;
+        else {
+            if (--month < 1) {
+                year--;
+                month = 12;
+            }
+            date = dayOfMonth(year, month);
+        }
+    }
+
+    public Day precedingDay() {
+        Day temp = new Day(this);
+        temp.precede();
+        return temp;
+    }
+
+    public void succeedDays(int n) {
+        if (n > 0)
+            precedeDays(-n);
+        else if (n > 0) {
+            date += n;
+            while (date > dayOfMonth(year, month)) {
+                date -= dayOfMonth(year, month);
+                if (++month > 12) {
+                    year++;
+                    month = 1;
+                }
+            }
+        }
+    }
+
+    public Day after(int n) {
+        Day temp = new Day(this);
+        temp.succeedDays(n);
+        return temp;
+    }
+
+    public void precedeDays(int n) {
+        if (n < 0)
+            succeedDays(-n);
+        else if (n > 0) {
+            date -= n;
+            while (date < 1) {
+                if (--month < 1) {
+                    year--;
+                    month = 12;
+                }
+
+                date += dayOfMonth(year, month);
+            }
+        }
+    }
+
+    public Day before(int n) {
+        Day temp = new Day(this);
+        temp.precedeDays(n);
+        return temp;
     }
 }
