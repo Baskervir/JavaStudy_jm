@@ -13,6 +13,6 @@ public class AccountTester1 {
         p.set(1999, 12, 31);
 
         Day q = gildong.getOpenDay();
-        System.out.println("계좌 개설일 : " + p);
+        System.out.println("계좌 개설일 : " + q);
     }
 }
