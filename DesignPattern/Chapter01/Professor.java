@@ -12,5 +12,22 @@ public class Professor {
 }
 
 public class Student {
-    private Professor
+    private Professor advisor;
+
+    public void setAdvisor(Professor advisor) {
+        this.advisor = advisor;
+    }
+
+    public void advise(String msg) {
+        System.out.println(msg);
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            Professor hongGilDong = new Professor();
+            Student manSup = new Student();
+            hongGilDong.setStudent(manSup);
+            hongGilDong.advise();
+        }
+    }
 }
