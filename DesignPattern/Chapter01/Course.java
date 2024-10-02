@@ -1,17 +1,19 @@
-public class Course {
-    private String id;
-    private String name;
-    private int numOfStudents = 0;
+import java.util.Vector;
 
-    public void addStudent() {
-        //수행문 기입란
+public class Course {
+    private Vector<Transcript> transcripts;
+    private String name;
+
+    public Course(String name) {
+        this.name = name;
+        transcripts = new Vector<Transcript>();
     }
 
-    public void deleteStudent() {
-        //수행문 기입란
+    public void addTranscript(Transcript transcript) {
+        transcripts.add(transcript);
+    }
+
+    public String getName() {
+        return name;
     }
 }
-
-/**
- *
- * **/
