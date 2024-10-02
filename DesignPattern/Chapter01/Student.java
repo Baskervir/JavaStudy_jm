@@ -9,11 +9,13 @@ public class Student {
 
     public void registerCourse(Course course) {
         courses.add(course);
+        course.addStudent(this);
     }
 
     public void dropCourse(Course course) {
         if (course.contains(course)) {
             courses.remove(course);
+            course.removeStudent(this);
         }
     }
 
