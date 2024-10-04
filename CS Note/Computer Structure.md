@@ -27,3 +27,9 @@
 [half word] : 워드 절반 크기
 [full word] : 워드 1배 크기
 [double word] : 워드 2배 크기
+[binary] : 이진법
+[decimal] : 십진법
+[flag] : CPU가 명령어를 처리하는 과정에서 고려해야 할 부가 정보
+[character set] : 컴퓨터가 인식하고 표현할 수 있는 문자 모음
+[character encoding] : 문자를 컴퓨터가 이해 가능한 코드로 변환 하는 방법
+[character decoding] : 0과 1로 이루어진 문자를 사람이 이해할 수 있는 문자로 변환
