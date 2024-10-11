@@ -46,3 +46,5 @@
 운영체제 항목 추가
 
 MySQL
+ - 기본 문법 학습(암기 X)
+ - three-way handshake
