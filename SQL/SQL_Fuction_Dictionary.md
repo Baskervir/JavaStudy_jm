@@ -15,3 +15,15 @@
  - [SPACE] : 공백 문자를 생성
  - [REVERSE] : 문자열을 역순으로 출력
  - [STRCMP] : 문자열을 비교
+
+[날짜 함수]
+ - [CURRENT_DATE] : DB 서버의 현재 날짜 확인
+ - [CURRENT_TIME] : DB 서버의 현재 시간 확인
+ - [CURRENT_TIMESTAMP or NOW] : DB 서버의 현재 날짜와 시간 확인
+ - [DATE_ADD / SUB] : 특정 날짜만큼 더하거나 뺀 결과 반환
+ - [DATEDIFF] : 날짜 간의 일수 차이 반환
+ - [TIMESTAMPDIFF] : 날짜 간의 시간 차이 반환
+ - [DAYNAME] : 지정한 날짜의 요일을 반환
+ - [YEAR / MONTH / WEEK / DAY] : 날짜에서 연 / 월 / 주 / 일 값을 반환
+ - [DATE_FORMAT] : 날짜 형식을 변환
+ - [GET_FORMAT] : 국가나 지역별 날짜 형식 확인
