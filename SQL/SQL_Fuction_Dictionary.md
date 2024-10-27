@@ -1,0 +1,12 @@
+[문자열 함수]
+ - [CONCAT] : 문자열과 문자열을 연결
+ - [CAST, CONVERT] : 테이터의 형을 변환
+ - [IFNULL, COLAESCE] : NULL을 대체
+ - [LOWER / UPPER] : 소문자 / 대문자로 변경
+ - [LTRIM / RTRIM] : 왼쪽 / 오른쪽 공백을 제거
+ - [TRIM] : 양쪽 공백을 제거
+ - [LENGTH] : 문자열의 크기를 반환
+ - [CHAR_LENGTH] : 문자열의 개수를 반환
+ - [POSITION] : 특정 문자까지의 문자열 길이를 반환
+ - [LEFT / RIGHT] : 왼쪽 / 오른쪽으로 지정한 길이만큼 문자열을 반환
+ - [SUBSTRING] : 지정한 범위의 문자열을 반환
