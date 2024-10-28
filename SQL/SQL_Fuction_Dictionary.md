@@ -54,3 +54,9 @@
  - [RANK] : 우선순위를 고려하지 않고 순위를 부여
  - [DENSE_RANK] : 건너뛰지 않고 순위를 부여
  - [NTILE] : 그룹 순위를 부여
+
+[분석 함수]
+ - [LAG / LEAD] : 앞 / 뒤 행을 참조
+ - [CUME_DIST] : 누적 분포를 계산
+ - [PERCENT_RANK] : 상대 순위를 계산
+ - [FIRST / LAST_VALUE] : 첫 / 마지막 행의 값을 반환
