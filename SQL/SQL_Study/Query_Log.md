@@ -240,7 +240,7 @@ select special_features, rating from film group by special_features, rating ;
 
 select special_features, count(*) as cnt from film group by special_features ;
 
-select special_features, rating, count(*) as cnt fromfilm group by special_features, rating order by special_features, rating, cnt desc ;
+select special_features, rating, count(*) as cnt from film group by special_features, rating order by special_features, rating, cnt desc ;
 
 #select special_features, rating, count(*) as cnt from film group by rating ; 그룹화 할 시에 반드시 기준이 되는 열이 필요 -> select 문에 사용한 열을 group by 문에도 사용해야 한다
 
