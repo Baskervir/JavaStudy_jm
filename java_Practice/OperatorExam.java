@@ -1,5 +1,5 @@
 public class OperatorExam {
-    public void calculater() {
+    public void calculate() {
         int a = 7;
         int b = 3;
         
@@ -19,6 +19,6 @@ public class OperatorExam {
     }
 
     public static void main(String[] args) {
-        new OperatorExam().calculater();
+        new OperatorExam().calculate();
     }
 }
