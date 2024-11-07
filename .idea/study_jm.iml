@@ -6,7 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Study_Note/Word_Dictionary/Property" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Study_Note/Word_Dictionary/RecursiveFunction" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/javaExercise" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/DesignPattern/Chapter01" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java_Practice" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
