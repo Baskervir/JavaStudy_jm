@@ -3,6 +3,8 @@ package javaStudy;
 public class Bus extends Car {
     int fee;
 
+    public Bus() {}
+
     public Bus(String name) {
         super.name = name;
     }
@@ -10,6 +12,10 @@ public class Bus extends Car {
     public Bus(String name, int number, int fee) {
         super(name, number);
         this.fee = fee;
+    }
+
+    public void announcements() {
+        System.out.println("안내방송을 합니다.");
     }
 
     @Override

@@ -6,5 +6,7 @@ public class CarExam {
         c.run();
         c.run(100);
         c.stop();
+        Car b = new Bus();
+        ((Bus)b).announcements();
     }
 }
