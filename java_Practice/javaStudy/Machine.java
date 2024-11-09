@@ -1,14 +1,6 @@
 package javaStudy;
 
-public class Machine{
-    public void turnOn() {
-        System.out.println("켰습니다.");
-    }
-
-    public void turnOff() {
-        System.out.println("껐습니다.");
-    }
-}
-
-class CarForMachine extends Machine {
+public abstract class Machine {
+    public abstract void turnOn();
+    public abstract void turnOff();
 }
