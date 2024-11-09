@@ -3,8 +3,9 @@ package javaStudy;
 public class Car {
     static int wheelCount;
     int speed;
-    String name;
+    public String name;
     int number;
+    public int gas;
 
     public Car() {
         this("이름없음", 0);
