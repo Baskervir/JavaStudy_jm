@@ -34,6 +34,10 @@ public class Car {
     public void stop() {
         System.out.println("차가 멈춥니다.");
     }
+
+    public void horn() {
+        System.out.println("경적을 울립니다.");
+    }
 }
 
 /**

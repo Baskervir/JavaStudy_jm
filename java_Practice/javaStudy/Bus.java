@@ -6,4 +6,10 @@ public class Bus extends Car {
         super(name, number);
         this.fee = fee;
     }
+
+    @Override
+    public void run() {
+        super.run();
+        System.out.println("차가 달리면서 다음 정거장을 안내합니다.");
+    }
 }
