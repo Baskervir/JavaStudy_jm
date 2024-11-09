@@ -5,5 +5,6 @@ public class CarExam {
         Car c = new Car();
         c.run();
         c.run(100);
+        c.stop();
     }
 }

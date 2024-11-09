@@ -31,7 +31,9 @@ public class Car {
         System.out.println("차가 " + speed + " km로 달립니다.");
     }
 
-    
+    public void stop() {
+        System.out.println("차가 멈춥니다.");
+    }
 }
 
 /**
