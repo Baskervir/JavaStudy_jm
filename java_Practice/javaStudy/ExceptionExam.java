@@ -7,8 +7,8 @@ public class ExceptionExam {
         try {
             int k = i / j;
             System.out.println(k);
-        } catch (ArithmeticException e) {
-            System.out.println("0으로 나눌 수 없습니다." + e.toString());
+        } catch (Exception e) {
+            System.out.println("예외 발생" + e.toString());
         } finally {
             System.out.println("예외와 상관없이 무조건 실행!");
         }
