@@ -14,6 +14,3 @@ public class 클래스명 extends Exception {
 [RuntimeException]을 상속받아 정의한 [Exception]은 에러 처리를 하지 않아도 컴파일상에서 에러를 발생시키지 않는다.
 
 모든 예외 사항을 적절하게 처리해줘야 프로그램이 안정적으로 수행 가능하다.
-
-[Checked Exception]과 [UnChecked Exception]의 차이점은 컴파일 시에 컴파일 에러를 미리 발생시켜서 반드시 예외를 처리할 것인가의 여부이다.
-실행 시에는 똑같이 실행된다.
