@@ -28,10 +28,9 @@ public class PracticeExample9 {
                     scores = new int[n];
                     break;
                 case 2:
-                    for (int i = 0; i <= n; i++) {
+                    for (int i = 0; i < scores.length; i++) {
                         System.out.print("scores[" + i + "]>");
                         scores[i] = sc.nextInt();
-                        sc.nextLine();
                     }
                     break;
                 case 3:
