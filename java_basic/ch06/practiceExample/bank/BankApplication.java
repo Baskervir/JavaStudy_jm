@@ -46,7 +46,7 @@ public class BankApplication {
         System.out.println("예금");
         System.out.println("----");
 
-        System.out.println("계좌번호 : ");
+        System.out.print("계좌번호 : ");
         String accountNo = scanner.nextLine();
 
         Account account = findAccount(accountNo);
