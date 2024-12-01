@@ -1,17 +1,18 @@
 package ch06.practiceExample.account;
 
 public class Account {
-    private int balance;
+    static final int MIN_BALANCE = 0;
+    static final int MAX_BALANCE = 1000000;
 
-    public int getBalance() {
-        return balance;
-    }
+    private int balance = 0;
 
     public void setBalance(int balance) {
-        if (balance < 0 || balance > 1000000) {
-            System.out.println("balance 값이 잘못되었습니다.");
-        } else {
+        if (balance >= MIN_BALANCE && balance <= MAX_BALANCE) {
             this.balance = balance;
         }
+    }
+
+    public int getBalance() {
+        return this.balance;
     }
 }
